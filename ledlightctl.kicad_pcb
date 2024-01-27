@@ -323,7 +323,7 @@
     (property "ki_keywords" "LED diode")
     (path "/63853191-e64a-4bfe-91e1-a76c4a688e1e")
     (attr through_hole)
-    (fp_text reference "D1" (at 1.75 -5.45) (layer "F.SilkS")
+    (fp_text reference "D1" (at 8.4825 -3.6425) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cf51699a-a5a4-4319-b5d1-4e04e94eb5b7)
     )
@@ -708,4 +708,18 @@
   (segment (start 63.5 32.5) (end 65.815 32.5) (width 0.55) (layer "F.Cu") (net 6) (tstamp bb7f59ae-ef1f-4ef8-af10-feadba1a8c48))
   (segment (start 61.25 33.905) (end 62.345 33.905) (width 0.55) (layer "F.Cu") (net 6) (tstamp f6c1bb47-4f54-4441-9276-bf053f1fcf5d))
 
+  (zone (net 2) (net_name "GND") (layers "F&B.Cu") (tstamp 3a85f47f-d2b0-4ab5-a294-7a2b26c1f743) (hatch edge 0.5)
+    (priority 1)
+    (connect_pads (clearance 0.5))
+    (min_thickness 0.25) (filled_areas_thickness no)
+    (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))
+    (polygon
+      (pts
+        (xy 46 25)
+        (xy 71 25)
+        (xy 71 45)
+        (xy 46 45)
+      )
+    )
+  )
 )
